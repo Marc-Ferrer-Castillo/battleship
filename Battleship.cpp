@@ -29,7 +29,7 @@ int main()
 		HARD = 30,// HARD MODE MAX ATTEMPTS
 		NUM_MAX = 10, // MAX NUMBER FOR ARRAY HORIZONTAL/VERTICAL LIMITS
 		NUM_MIN = 1, // MINIMUM NUMBER FOR ARRAY HORIZONTAL/VERTICAL LIMITS
-		MAX_FLEET = 2, // USED TO GENERATE 1 COORDINATE IN THE X / Y AXLE MADE OF 2 NUMBERS (a,b)
+		MAX_FLEET = 10, // MAX NUMBER OF SHIPS IN THE GAME
 		MAX_CHAR = 'J', // LAST CHAR THAT CAN BE ENTERED BY USER
 		MIN_CHAR = 'A';// FIRST CHAR THAT CAN BE ENTERED BY USER
 
@@ -140,8 +140,9 @@ int main()
 				cout << "  " << j + 1 << endl;
 			}
 
-			/*
+			
 			//Decomment to tell ship positions visually
+			/*
 			for (int k1 = 0; k1 < NUM_MAX; k1++)
 			{
 				for (int l1 = 0; l1 < NUM_MAX; l1++)
@@ -220,7 +221,7 @@ int main()
 		do
 		{
 			// Asks to play again
-			cout << "Do you want to try again?  [0]SI [1]NO :\t";
+			cout << "Do you want to try again?  [0]YES [1]NO :\t";
 			cin >> exit;
 
 			switch (exit)
@@ -236,7 +237,7 @@ int main()
 				break;
 
 			default:
-				cout << "Enter an option of the following: [0] o [1].\n";
+				cout << "Enter an option of the following: [0] for yes or [1] for no.\n";
 				break;
 			}
 
