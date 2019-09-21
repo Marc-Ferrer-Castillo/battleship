@@ -24,7 +24,7 @@ int main()
 
 	// Constant values
 	const int
-		HARD = 70, // EASY MODE MAX ATTEMPTS
+		EASY = 70, // EASY MODE MAX ATTEMPTS
 		MODERATE = 50, // MODERATE MODE MAX ATTEMPTS
 		HARD = 30,// HARD MODE MAX ATTEMPTS
 		NUM_MAX = 10, // MAX NUMBER FOR ARRAY HORIZONTAL/VERTICAL LIMITS
@@ -97,7 +97,7 @@ int main()
 			switch (diff_option)
 			{
 			case 1:
-				difficulty = HARD; // Difficulty now is easy
+				difficulty = EASY; // Difficulty now is easy
 				break;
 
 			case 2:
@@ -246,3 +246,4 @@ int main()
 
 	return 0;
 }
+
